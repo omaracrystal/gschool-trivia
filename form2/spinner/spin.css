@@ -2,7 +2,9 @@
 #wrapper{
   margin: 40px auto 0;
   width:266px;
-  position:relative;
+  margin-right: 400px;
+  margin-left: 50px;
+  position: absolute;
 }
 
 #txt{

@@ -2,6 +2,11 @@ body {
 background-image: url("http://fc07.deviantart.net/fs70/f/2013/174/3/e/recycled_texture_background_by_sandeep_m-d6aeau9.jpg");
 }
 
+#container {
+  position: relative;
+  width: 700px;
+}
+
 h2 {
   font-size: 48px;
   color: white;
@@ -16,7 +21,8 @@ h3 {
 
 #quiz-container {
   position: absolute;
-  margin-left: 400px;
+  margin-left: 350px;
+  width: 300px;
   text-align: center;
   background: burlywood;
   padding: 20px;

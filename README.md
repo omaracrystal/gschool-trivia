@@ -19,11 +19,19 @@ The two images below is a quick reference of what is already in code:
 
 ####Technologies planning to use:####
 
- * Linking profiles of gSchool students from either facebook, github or slack (whatever seems the easiest per instructor’s recommendation).
+ * API : [Linking profiles of gSchool students from either facebook, github or slack (whatever seems the easiest per instructor’s recommendation).]
+ * HTML
+ * CSS
+ * JavaScript / jQuery
+ * AJAX
+ * JSON
+ * Jasmine
 
 ####Plans to improve user interface:####
 * Place spinner in the center and once the spinner lands on a category the questionnaire form will appear in front of the spinner.
-* The questionnaire’s potential answers will be full size buttons instead of being a input selector. This will allow faster answering capabilities
-* I hope to have time to implement a timer so that the player answers the questions quickly
+* The questionnaire’s potential answers will be full size buttons instead of being a input selector. This will allow faster answering capabilities.
 * When answer is answered correctly the button will highlight to green. If answered incorrectly the button will turn red.
+
+####Stretch Goals####
+* Implement a timer so that the player answers the questions quickly
 * I would like to add a flag in the bottom left corner if the player is certain the answer needs improvement or is actually incorrect. This question will then be passed into a “flag” array to be evaluated by the mediator again.

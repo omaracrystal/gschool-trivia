@@ -21,19 +21,28 @@ $(document).ready(function() {
         choices: ["1996", "1995", " 1994"],
         correctAnswer: "1995"
     },
-    // {
-    //     question: "The original name of JavaScript was?",
-    //     choices: ["LiveScript", "ECMAScript", "WireScript"],
-    //     correctAnswer: "LiveScript"
-    // } {
-    //     question: "Which of the following browsers was the first to support JavaScript?",
-    //     choices: ["Microsoft Internet Explorer 2.0 beta", "Netscape Navigator 2.0 beta", "Opera 2.0 beta"],
-    //     correctAnswer: "Netscape Navigator 2.0 beta"
-    // } {
-    //     question: "The JavaScript international standard is called?",
-    //     choices: ["DHTML JavaScript Standard", "ISO-262 Standard", "ECMA-262 Standard"],
-    //     correctAnswer: "ECMA-262 Standard"
-    // }
+    {
+        question: "The original name of JavaScript was?",
+        choices: ["LiveScript", "ECMAScript", "WireScript"],
+        correctAnswer: "LiveScript"
+    }, {
+        question: "Which of the following browsers was the first to support JavaScript?",
+        choices: ["Microsoft Internet Explorer 2.0 beta", "Netscape Navigator 2.0 beta", "Opera 2.0 beta"],
+        correctAnswer: "Netscape Navigator 2.0 beta"
+    }, {
+        question: "The JavaScript international standard is called?",
+        choices: ["DHTML JavaScript Standard", "ISO-262 Standard", "ECMA-262 Standard"],
+        correctAnswer: "ECMA-262 Standard"
+    }, {
+        question: "Applying a function to a value and creating a new value is called what?",
+        choices: ["declaration", "projection", "expression"],
+        correctAnswer: "projection"
+    }, {
+        question: "All of the following are used for projection?",
+        choices: ["declaration", "projection", "expression"],
+        correctAnswer: "projection"
+    }
+
     ];
 
     var ansWer = "";

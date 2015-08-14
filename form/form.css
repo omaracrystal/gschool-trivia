@@ -1,10 +1,5 @@
-#jsForm {
-  width: 400px;
-  vertical-align: center;
-  margin-left: 10%;
-  margin-right: 200px;
-  margin-top: 25%;
-  background: grey;
+body {
+  background-image: url("http://fc07.deviantart.net/fs70/f/2013/174/3/e/recycled_texture_background_by_sandeep_m-d6aeau9.jpg");
 }
 
 div {
@@ -12,12 +7,23 @@ div {
   width: 300px;
 }
 
+h5 {
+  font-size: 125%;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+}
+
 .btn {
    width: 300px;
    margin-top: 10px;
-   height: 50px;
-   text-align: center;
-   vertical-align: middle;
+   height: 60px;
+   top:45%;
+   left: 50%;
+   transform: translate3d(-50%,-50%, 0);
    position: relative;
    line-height: 15px;
    border-top: 1px solid #61baf2;
@@ -28,6 +34,7 @@ div {
    font-size: 20px;
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
+   opacity: 1;
    }
 
 .btn:hover {
@@ -42,3 +49,36 @@ div {
    border-top-color: #1b435e;
    background: #1b435e;
    }
+
+#btnGroupOuter {
+  text-align: center;
+  width: 340px;
+  height: 315px;
+  top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+  z-index: 1;
+  border-radius: 25px;
+  background: grey;
+  opacity: 0.65;
+}
+
+#qBox {
+  width: 300px;
+  height: 80px;
+  margin: auto;
+  top:38%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+  z-index: 3;
+}
+
+#btnGroupInner {
+  top: 58%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+  z-index: 2;
+}

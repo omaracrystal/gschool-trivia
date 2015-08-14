@@ -1,0 +1,69 @@
+body {
+  background-image: url("http://fc07.deviantart.net/fs70/f/2013/174/3/e/recycled_texture_background_by_sandeep_m-d6aeau9.jpg");
+  font: 14px Georgia, serif;
+}
+
+h1 {
+  margin: 25px 0;
+  font: 14px Georgia, Serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+
+#container {
+  position: relative;
+  width: 700px;
+}
+
+#quiz-container {
+  position: absolute;
+  margin-left: 350px;
+  width: 300px;
+  text-align: center;
+  background: burlywood;*/
+  padding: 20px;
+  border-radius: 25px;
+  border-color: bisque;*/
+  border-style: groove;*/
+}
+
+#page-wrap {
+  width: 500px; margin: 0 auto;
+}
+
+
+#quiz input {
+  vertical-align : middle;
+}
+
+#quiz ol {
+  margin : 0 0 10px 20px;
+}
+
+#quiz ol li {
+  margin : 0 0 20px 0;
+}
+
+#quiz ol li div {
+  padding : 4px 0;
+}
+
+#quiz h3 {
+  font-size: 17px; margin: 0 0 1px 0; color : #666;
+}
+
+#results {
+  font : 44px Georgia, Serif;
+}

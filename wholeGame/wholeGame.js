@@ -1,7 +1,14 @@
 $(document).ready(function() {
     console.log("The document is ready!");
+});
 
-var qBank = [{
+
+var ansWer = "";
+    $('#quiz-container, #btn-container .submitBtn').hide();
+//whenever I get rid of the "(" symbol right before this function the quiz container is visible why???
+(function () {
+        var i = 0;
+        var q = [{
             question: "What does the following expression return? <br> 3 / 'bob';",
             choices: ["undefined", "ReferenceError", "NaN"],
             correctAnswer: "NaN"
@@ -42,25 +49,6 @@ var qBank = [{
 
         ];
 
-//////////////////////////Question contructor
-function QuestionBank(question, choices, answer) {
-    this.question = question,
-    this.choices = [choice1, choice2, answer],
-    this.correctAnswer = answer
-}
-
-//////////////////////////Question Methods
-//change innerHTML of btn elements to reflect choices
-QuestionBank.prototype.render = function() {
-  for (var i = 0; i < qBank.length; i++) {
-
-    var btnDiv = $('#btnGroupInner').children.innerHTML(this.choices);
-
-  };
-
-}
-
-
     function generateQuestions() {
         console.log(q[i].choices);
         $('#quiz-container, #btn-container .submitBtn').fadeIn('slow');
@@ -85,8 +73,7 @@ QuestionBank.prototype.render = function() {
         if (ansWer == $('.quiz input:checked').val()) generateQuestions();
 
     });
-});
+})();
 
 
 
-}); //DOCUMENT ready

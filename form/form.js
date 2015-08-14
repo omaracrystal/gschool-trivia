@@ -90,7 +90,7 @@ var test = function() {
     console.log(qChoices);
     console.log(qBank);
   };
-    $('#qBox').append(qBank[0].questions[0].question);
+    $('#qBox').append("<h5>"+qBank[0].questions[0].question+"</h5>");
     $('#A').append(qBank[0].questions[0].choices[0]);
     $('#B').append(qBank[0].questions[0].choices[1]);
     $('#C').append(qBank[0].questions[0].choices[2]);

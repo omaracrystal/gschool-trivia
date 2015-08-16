@@ -11,13 +11,9 @@ This game will have the following:
 * Trivia Question Form = once the spinner stops on a category- A question associated with that category will appear with 3 choices.
 * Score Card = this card will keep track on how many questions have been answered correctly and incorrectly. You will earn a point for every correct answer and lose a point for every incorrect answer
 
-Spinner
+Below is a picture of the Spinner, Question Form and Trivia Form
 ![](/images/spinner.png)
-
-Question Contributor Form
 ![](/images/questionForm.png)
-
-Trivia Question Form
 ![](/images/triviaForm.png)
 
 

@@ -5,6 +5,12 @@ var clicks = 0;
 
 $(document).ready(function(){
 
+function showForm () {
+  if(aoY > 0) {
+    $("#formWrapper").show();
+  }
+}
+
   /*WHEEL SPIN FUNCTION*/
   $('#spin').click(function(){
 
@@ -48,6 +54,7 @@ $(document).ready(function(){
           setTimeout(function () {
             $('#spin').removeClass('spin');
           }, 100);
+
         }
       }, 10);
 
@@ -56,10 +63,11 @@ $(document).ready(function(){
       });
 
       noY = t.offset().top;
-
+      //have form appear once the spinner stops
+ showForm();
     });
-  });
 
+  });
 
 
 });//DOCUMENT READY

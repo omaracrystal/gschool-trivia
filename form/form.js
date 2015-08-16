@@ -1,6 +1,10 @@
 // $(document).ready(function() {
 //     console.log("The document is ready!");
 
+$("#formWrapper").hide();
+
+$("#addForm").hide();
+
 // layout qBank = [   { category:"category1", questions:[{set1},{set2},{set3}...] }, { category:"category2", questions:[{set1},{set2},{set3}...] }    ]
 var qBank = [
               {
@@ -82,6 +86,7 @@ function QuestionGenerator(category, question, choices, answer) {
 //change innerHTML of btn elements to reflect choices
 var test = function() {
   var shuffleQ = shuffle(qBank);
+
   //iterate through qBank and grab choices from array then shuffle them
   for (var i = 0; i < shuffleQ.length; i++) {
     //grab the choices array within the qBank array
@@ -98,7 +103,6 @@ var test = function() {
 
 test();
 
-//
 // Question.prototype.form = function(){
 
 // };
@@ -124,35 +128,28 @@ function shuffle(array) {
 }
 
 
+//functions//
 
-function generateQuestions() {
-    console.log(q[i].choices);
-    $('#quiz-container, #btn-container .submitBtn').fadeIn('slow');
-    var txt = "<h3>" + q[i].question + "</h3><br>";
-    $(q[i].choices).each(function (idx, value) {
-        console.log(value);
-        txt += "<input type='radio' name='choice' value='" + value + "' />" + " " + value + "<br><br>";
-    });
-    ansWer = q[i].correctAnswer;
-    $('.quiz').html(txt);
-    i = ++i % q.length;
+function qFormAppear () {
+//once spinner stops show form
+
+//pull questions from relatable category
 }
 
-$('.getStarted').on('click', function () {
-    $(this).parent().fadeOut(200);
-    generateQuestions();
+function scoreCard () {
+//add points
+//deduct points
+}
+
+function scoreCardRender () {
+//append points to scorecard on DOM
+}
+
+//once the button "Add Your Own Question" is clicked show the question form
+$('#btnAddQ').on("click", function(){
+  $("#addForm").show();
 });
 
-$('.submitBtn').on('click', function (e) {
-    e.stopPropagation();
-    console.log($('.quiz input:checked').val());
-    if (ansWer == $('.quiz input:checked').val()) generateQuestions();
-
-});
-
-
-
-// });
 
 
 

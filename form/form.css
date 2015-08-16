@@ -1,5 +1,5 @@
 body {
-  background-image: url("http://fc07.deviantart.net/fs70/f/2013/174/3/e/recycled_texture_background_by_sandeep_m-d6aeau9.jpg");
+  background-image: url(../images/blue_background.jpeg);
 }
 
 div {
@@ -15,6 +15,7 @@ h5 {
   margin-right: auto;
   color: white;
   text-align: center;
+  color: white;
 }
 
 .btn {
@@ -28,7 +29,7 @@ h5 {
    line-height: 15px;
    border-top: 1px solid #61baf2;
    background: #338ccc;
-   padding: 16px 32px;
+  /* padding: 16px 32px;*/
    border-radius: 36px;
    color: white;
    font-size: 20px;
@@ -60,23 +61,26 @@ h5 {
   position: absolute;
   z-index: 1;
   border-radius: 25px;
-  background: grey;
-  opacity: 0.65;
+  background: rgb(56, 56, 83);
+  border-top: 1px solid #61baf2;
+  border-bottom: 4px solid #000000;
+  border-right: 4px solid #1C1C2A;
+  opacity: .96;
 }
 
 #qBox {
   width: 300px;
   height: 80px;
   margin: auto;
-  top:38%;
+  top:29%;
   left: 50%;
   transform: translate3d(-50%,-50%, 0);
   position: absolute;
-  z-index: 3;
+  z-index: 2;
 }
 
 #btnGroupInner {
-  top: 58%;
+  top: 60%;
   left: 50%;
   transform: translate3d(-50%,-50%, 0);
   position: absolute;

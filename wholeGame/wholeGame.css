@@ -1,6 +1,8 @@
 body {
   background-image: url("http://fc07.deviantart.net/fs70/f/2013/174/3/e/recycled_texture_background_by_sandeep_m-d6aeau9.jpg");
   font: 14px Georgia, serif;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -11,7 +13,7 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 43px;
   color: white;
   text-align: center;
 }
@@ -20,50 +22,76 @@ h3 {
   color: white;
   text-align: center;
   font-size: 22px;
+  vertical-align: center;
 }
 
-#container {
-  position: relative;
-  width: 700px;
-}
-
-#quiz-container {
-  position: absolute;
-  margin-left: 350px;
-  width: 300px;
-  text-align: center;
-  background: burlywood;*/
-  padding: 20px;
-  border-radius: 25px;
-  border-color: bisque;*/
-  border-style: groove;*/
-}
-
-#page-wrap {
-  width: 500px; margin: 0 auto;
-}
-
-
-#quiz input {
-  vertical-align : middle;
-}
-
-#quiz ol {
-  margin : 0 0 10px 20px;
-}
-
-#quiz ol li {
-  margin : 0 0 20px 0;
-}
-
-#quiz ol li div {
-  padding : 4px 0;
-}
 
 #quiz h3 {
   font-size: 17px; margin: 0 0 1px 0; color : #666;
 }
 
+#header {
+  width: 100%
+  left: 50%;
+  z-index: -1;
+  text-align: center;
+}
+
 #results {
   font : 44px Georgia, Serif;
+}
+
+#addQ {
+   height: 60px;
+   margin-top: 350px;
+   left: 50%;
+   z-index: 4;
+   text-align: center;
+}
+
+#btnAddQ {
+  height: 70%;
+  left: 50%
+  color: black;
+}
+
+
+
+/* add your own question */
+#cancel {
+  position: absolute;
+  max-height: 40px;
+  max-width: 100px;
+  margin-left: 25%;
+  margin-top: 40%;
+}
+
+#add {
+  position: absolute;
+  max-height: 40px;
+  max-width: 80px;
+  margin-left: -30%;
+  margin-top: 40%;
+}
+
+#title {
+  max-width: 800px;
+}
+
+#genre {
+  max-width: 800px;
+}
+
+#myForm {
+  margin: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+#dropDown {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
 }

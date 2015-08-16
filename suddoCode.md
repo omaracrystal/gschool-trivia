@@ -11,3 +11,22 @@ question form:
     ...once clicked pop up (right or wrong) thumbs up or thumbs down
   >continue "spin" option
 
+
+
+//functions//
+
+function qFormAppear ()
+  >once spinner stops show form
+
+
+  >pull questions from relatable category
+
+
+function scoreCard ()
+  >add points
+  >deduct points
+
+function scoreCardRender ()
+  >append points to scorecard on DOM
+
+function addQformAppear ()

@@ -121,37 +121,27 @@ score = 0
 
 $(".btn.choice").on("click", function() {
 
-  console.log($(this).text());
-
   var userChoice = $(this).text()
-
   var answer = qBank[0].questions[0].answer
 
   console.log(userChoice);
   console.log(answer);
+
   if (answer == userChoice)  {
     //add point
     score += 1;
-
-    //delay from then hide it
-    //delay
-    $("#formWrapper").hide();
-
-    //append score to DOM
-    $().append(score);
-
-  } else {
+    } else {
     //take away point
     score -= 1;
-
-    //form hides
-    //delar
-    $("#formWrapper").hide();
-
-    //append score to DOM
-    $().append(score);
-  }
+    }
+    //delay then hide it
+  $("#formWrapper").hide();
+  //clear out score
+  $("#scoreKeeper").empty();
+  //append score to DOM
+  $("#scoreKeeper").append("<h2>"+score+"</h2>");
   console.log(score);
+
 });
 
 

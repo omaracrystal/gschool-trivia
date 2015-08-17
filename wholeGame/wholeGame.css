@@ -41,6 +41,13 @@ h3 {
   z-index: 10;
 }
 
+#scoreKeeper {
+  position: fixed;
+  top: 55px;
+  right: -32px;
+  z-index: 10;
+}
+
 
 #scoreFrame {
   position: fixed;

@@ -5,6 +5,11 @@ body {
   width: 100%;
 }
 
+span {
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+}
 
 h1 {
   margin: 25px 0;
@@ -26,6 +31,51 @@ h3 {
   vertical-align: center;
 }
 
+
+input {
+    border: 2px solid white;
+    height: 18px;
+    -webkit-box-shadow:
+      inset 0 0 15px  rgba(0,0,0,0.1),
+            0 0 20px rgba(0,0,0,0.1);
+    -moz-box-shadow:
+      inset 0 0 15px  rgba(0,0,0,0.1),
+            0 0 20px rgba(0,0,0,0.1);
+    box-shadow:
+      inset 0 0 15px  rgba(0,0,0,0.1),
+            0 0 20px rgba(0,0,0,0.1);
+    padding: 1px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 6px 0;
+    border-radius: 10px;
+}
+
+.form-control {
+    width: 100%;
+    background: #9bc7de;
+    color: #200;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+
+    border: 2px solid white;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #300;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #300;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #300;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #300;
+}
+
 .score h3{
   position: absolute;
   color: white;
@@ -38,14 +88,14 @@ h3 {
   position: fixed;
   top: 50px;
   right: 55px;
-  z-index: 10;
+  z-index: 0;
 }
 
 #scoreKeeper {
   position: fixed;
   top: 55px;
   right: -32px;
-  z-index: 10;
+  z-index: 0;
 }
 
 
@@ -53,7 +103,7 @@ h3 {
   position: fixed;
   top: -10px;
   right: -90px;
-  z-index: 11;
+  z-index: 0;
 }
 
 #quiz h3 {
@@ -89,19 +139,21 @@ h3 {
 
 /* add your own question */
 #cancel {
+  font-size: 16px;
   position: absolute;
-  max-height: 40px;
+  max-height: 25px;
   max-width: 100px;
   margin-left: 25%;
-  margin-top: 40%;
+  margin-top: 43%;
 }
 
 #add {
+  font-size: 16px;
   position: absolute;
-  max-height: 40px;
+  max-height: 25px;
   max-width: 80px;
   margin-left: -30%;
-  margin-top: 40%;
+  margin-top: 43%;
 }
 
 #title {

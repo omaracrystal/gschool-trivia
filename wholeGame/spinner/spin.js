@@ -5,14 +5,18 @@ var clicks = 0;
 
 $(document).ready(function(){
 
-function showForm () {
-  if(aoY > 0) {
-    $("#formWrapper").show();
-  }
-}
 
   /*WHEEL SPIN FUNCTION*/
   $('#spin').click(function(){
+
+
+    //added timeout function for when form should appear
+    var delay = 7500;
+    function showForm(){
+      $("#formWrapper").show();
+    }
+    setTimeout(showForm, delay)
+
 
     //add 1 every click
     clicks ++;
@@ -41,34 +45,36 @@ function showForm () {
 
         var aoY = t.offset().top;
         $("#txt").html(aoY);
-        console.log(aoY);
+        // console.log(aoY);
 
         /*23.7 is the minumum offset number that
         each section can get, in a 30 angle degree.
         So, if the offset reaches 23.7, then we know
         that it has a 30 degree angle and therefore,
         exactly aligned with the spin btn*/
-        if(aoY < 23.89){
-          console.log('<<<<<<<<');
-          $('#spin').addClass('spin');
-          setTimeout(function () {
-            $('#spin').removeClass('spin');
-          }, 100);
 
-        }
-      }, 10);
+      //   if(aoY < 23.89){
+      //     // console.log('<<<<<<<<');
+      //     $('#spin').addClass('spin');
+      //     setTimeout(function () {
+      //       $('#spin').removeClass('spin');
+      //     }, 100);
+
+      //   }
+      // }, 10);
 
       $('#inner-wheel').css({
         'transform' : 'rotate(' + totalDegree + 'deg)'
       });
 
       noY = t.offset().top;
-      //have form appear once the spinner stops
- showForm();
+
     });
 
   });
 
+
+});
 
 });//DOCUMENT READY
 

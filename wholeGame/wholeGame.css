@@ -84,25 +84,67 @@ input {
   z-index: 0;
 }
 
-#scoreWrapper {
+
+
+
+
+
+
+#gitPicWrapper {
   position: fixed;
   top: 50px;
   right: 55px;
   z-index: 0;
 }
 
-#scoreKeeper {
+#gitPicFrame {
   position: fixed;
-  top: 55px;
-  right: -32px;
+  top: -10px;
+  left: 0px;
   z-index: 0;
 }
 
+#userPic {
+  position: fixed;
+  top: 58px;
+  left: 38px;
+  z-index: 0;
+}
+
+#imgGit {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+#menuWrapper {
+  position: fixed;
+  top: 50px;
+  left: 140px;
+  z-index: 0;
+}
+
+#scoreWrapper {
+  position: fixed;
+  top: 50px;
+  right: 45px;
+  z-index: 0;
+}
+
+#scoreKeeper {
+  position: fixed;
+  top: 55px;
+  right: -45px;
+  z-index: 0;
+}
 
 #scoreFrame {
   position: fixed;
   top: -10px;
-  right: -90px;
+  right: -100px;
   z-index: 0;
 }
 
@@ -178,3 +220,42 @@ input {
 
 }
 
+
+
+
+
+
+
+/* LOGIN MENU */
+
+/*.menu-btn div {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  padding-right: 8px;
+  margin-top: -0.50em;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 200;
+  vertical-align: middle;
+  z-index: 99;
+}
+
+.menu-btn span {
+  display: block;
+  width: 19px;
+  height: 3px;
+  margin: 4px 0;
+  background: rgb(0,0,0);
+  z-index: 99;
+}
+
+.responsive-menu{
+  display: none;
+}
+
+.expand {
+  display: block !important;
+}*/
+
+/* END OF MENU */

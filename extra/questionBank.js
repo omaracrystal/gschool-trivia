@@ -1,3 +1,6 @@
+///////////extra
+///alternative to how question array is arranged
+
 $(document).ready(function() {
     console.log("The document is ready!");
 

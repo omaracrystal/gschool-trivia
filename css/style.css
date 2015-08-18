@@ -1,8 +1,14 @@
 body {
-  background-image: url("http://fc07.deviantart.net/fs70/f/2013/174/3/e/recycled_texture_background_by_sandeep_m-d6aeau9.jpg");
-  font: 14px Georgia, serif;
+  background-image: url(../images/blue_background.jpeg);
+  font-weight: lighter;
+  font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
   height: 100%;
   width: 100%;
+}
+
+div {
+  margin: 0 auto;
+  width: 300px;
 }
 
 span {
@@ -13,8 +19,7 @@ span {
 
 h1 {
   margin: 25px 0;
-  font: 14px Georgia, Serif;
-  text-transform: uppercase;
+  font-size: 14px;
   letter-spacing: 3px;
 }
 
@@ -28,6 +33,17 @@ h3 {
   color: white;
   text-align: center;
   font-size: 22px;
+  vertical-align: center;
+}
+
+h5 {
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+  color: white;
   vertical-align: center;
 }
 
@@ -62,19 +78,23 @@ input {
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #300;
+    color: #300;
 }
+
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #300;
-   opacity:  1;
+   color: #300;
+   opacity: 1;
 }
+
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #300;
+   color: #300;
    opacity:  1;
 }
+
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #300;
+   color: #300;
 }
+
 
 .score h3{
   position: absolute;
@@ -84,12 +104,104 @@ input {
   z-index: 0;
 }
 
+#header {
+  width: 100%
+  left: 50%;
+  z-index: -1;
+  text-align: center;
+}
+
+#quiz h3 {
+  font-size: 17px; margin: 0 0 1px 0; color : #666;
+}
+
+/* button functionality */
+.btn {
+   width: 300px;
+   margin-top: 10px;
+   height: 60px;
+   top:45%;
+   left: 50%;
+   transform: translate3d(-50%,-50%, 0);
+   position: relative;
+   line-height: 15px;
+   border-top: 1px solid #61baf2;
+   background: #338ccc;
+   border-radius: 36px;
+   color: white;
+   font-size: 18px;
+   font-weight: lighter;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   text-align: center;
+   vertical-align: middle;
+   opacity: 1;
+   }
+
+.btn:hover {
+   width: 300px;
+   border-top-color: #285e82;
+   background: #285e82;
+   color: #ccc;
+   }
+
+.btn:active {
+   width: 300px;
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+/* end of button functionality */
+
+/* trivia question form */
+#btnGroupOuter {
+  text-align: center;
+  vertical-align: middle;
+  width: 340px;
+  height: 315px;
+  top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+  z-index: 1;
+  border-radius: 25px;
+  background: rgb(56, 56, 83);
+  border-top: 1px solid #61baf2;
+  border-bottom: 4px solid #000000;
+  border-right: 4px solid #1C1C2A;
+  opacity: .96;
+}
+
+#qBox {
+  width: 300px;
+  height: 80px;
+  margin: auto;
+  top:30%;
+  left: 50%;
+  font-size: 22px;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+  z-index: 10;
+}
+
+#btnGroupInner {
+  top: 60%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+  z-index: 2;
+}
+
+#btnGroupInner h5 {
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: center;
+  z-index: 10;
+}
+/* end of trivia question form */
 
 
 
-
-
-
+/*player section*/
 #gitPicWrapper {
   position: fixed;
   top: 50px;
@@ -108,7 +220,7 @@ input {
   position: fixed;
   top: 58px;
   left: 38px;
-  z-index: 0;
+  z-index: -1;
 }
 
 #imgGit {
@@ -120,6 +232,7 @@ input {
   -ms-filter: "FlipH";
 }
 
+/* menu section*/
 #menuWrapper {
   position: fixed;
   top: 50px;
@@ -127,6 +240,7 @@ input {
   z-index: 0;
 }
 
+/*score section*/
 #scoreWrapper {
   position: fixed;
   top: 50px;
@@ -148,22 +262,9 @@ input {
   z-index: 0;
 }
 
-#quiz h3 {
-  font-size: 17px; margin: 0 0 1px 0; color : #666;
-}
 
-#header {
-  width: 100%
-  left: 50%;
-  z-index: -1;
-  text-align: center;
-}
-
-#results {
-  font : 44px Georgia, Serif;
-}
-
-#addQ {
+/* add your own question form*/
+#btnAddQwrapper {
    height: 60px;
    margin-top: 350px;
    left: 50%;
@@ -177,9 +278,6 @@ input {
   color: black;
 }
 
-
-
-/* add your own question */
 #cancel {
   font-size: 16px;
   position: absolute;
@@ -198,14 +296,6 @@ input {
   margin-top: 43%;
 }
 
-#title {
-  max-width: 800px;
-}
-
-#genre {
-  max-width: 800px;
-}
-
 #myForm {
   margin: 80px;
   margin-left: auto;
@@ -219,43 +309,3 @@ input {
   margin-right: auto;
 
 }
-
-
-
-
-
-
-
-/* LOGIN MENU */
-
-/*.menu-btn div {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  padding-right: 8px;
-  margin-top: -0.50em;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: 200;
-  vertical-align: middle;
-  z-index: 99;
-}
-
-.menu-btn span {
-  display: block;
-  width: 19px;
-  height: 3px;
-  margin: 4px 0;
-  background: rgb(0,0,0);
-  z-index: 99;
-}
-
-.responsive-menu{
-  display: none;
-}
-
-.expand {
-  display: block !important;
-}*/
-
-/* END OF MENU */

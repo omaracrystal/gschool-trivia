@@ -5,6 +5,8 @@ $("#formWrapper").hide();
 
 $("#addForm").hide();
 
+$("#gitUserName").hide();
+
 });//DOCUMENT ready
 
 ////////////////////question bank////////////////////
@@ -125,7 +127,7 @@ $("#cancel").on("click", function (){
 })
 
 
-//////ADD YOUR OWN QUESTION FORM FUNCTIONALITY
+//////"ADD YOUR OWN QUESTION FORM" FUNCTIONALITY
 $("#add").on("click", function (e){
   e.preventDefault();
 
@@ -154,5 +156,19 @@ $("#add").on("click", function (e){
 
   return(qBank);
 });
+
+
+//////USER MENU FUNCTIONALITY
+$("#menu").on("mouseover", function (){
+  $("#gitUserName").show();
+})
+
+$("#menu").on("mouseout", function (){
+  $("#gitUserName").hide();
+})
+
+$("#menu").on("click", function (){
+  $("#gitUserName").show();
+})
 
 ////////////////////End of Click Events////////////////////

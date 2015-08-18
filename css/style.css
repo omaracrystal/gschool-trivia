@@ -240,6 +240,26 @@ input {
   z-index: 0;
 }
 
+#menu:hover {
+  width: 15%;
+  height: 15%;
+  z-index: 15;
+  -webkit-animation:spin .25s linear;
+  -moz-animation:spin .25s linear;
+  animation:spin .25s linear;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(180deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(180deg); transform:rotate180deg); } }
+
+#menuFormWrapper {
+  position: fixed;
+  top: 15px;
+  left: 140px;
+  z-index: 7;
+}
+
 /*score section*/
 #scoreWrapper {
   position: fixed;

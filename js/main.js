@@ -7,7 +7,8 @@ $("#addForm").hide();
 
 $("#gitUserName").hide();
 
-});//DOCUMENT ready
+//DOCUMENT ready
+});
 
 ////////////////////question bank////////////////////
 var qBank = [

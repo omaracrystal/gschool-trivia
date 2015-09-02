@@ -18,13 +18,13 @@ span {
 }
 
 h1 {
-  margin: 25px 0;
-  font-size: 14px;
-  letter-spacing: 3px;
+/*  margin: 25px 0;*/
+  font-size: 1.1em;
+  letter-spacing: .3em;
 }
 
 h2 {
-  font-size: 43px;
+  font-size: 3.5em;
   color: white;
   text-align: center;
 }
@@ -32,7 +32,7 @@ h2 {
 h3 {
   color: white;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.9em;
   vertical-align: center;
 }
 
@@ -113,6 +113,10 @@ input {
 
 #quiz h3 {
   font-size: 17px; margin: 0 0 1px 0; color : #666;
+}
+
+#spinWrapper {
+
 }
 
 /* button functionality */

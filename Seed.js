@@ -48,3 +48,10 @@ module.exports = databaseSeed;
 //in database.js
 //create schemea(layer of inforcement) in app.js
 //the req.body is the same as
+
+
+
+
+heroku- owned by salesforce
+
+dino (container light weight server) (built on amazon)

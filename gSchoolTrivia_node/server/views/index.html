@@ -1,0 +1,179 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+<div class="mainGrid">
+
+  <div class="box" id="1">
+    <!--git Picture of user-->
+    <div id="userPic">
+      <img src="../images/garfield.png" width= "45%" height="45%">
+    </div>
+    <!--end of git picture of user-->
+
+    <!--git pic frame-->
+      <div id= "gitPicFrame">
+        <img src="../images/blue_circle.png" id= "imgGit" width="200" height="240">
+      </div>
+    <!--end of git pic frame-->
+  </div>
+
+
+  <div class="box" id="2">
+    <div id= "header">
+      <h2>gSchool Trivia</h2>
+    </div>
+  </div>
+
+
+  <div class="box" id="3">
+    <!--score card -->
+    <div id="scoreWrapper">
+      <div id= "scoreFrame">
+        <img src="../images/blue_circle.png" width="200" height="240">
+      </div>
+      <div class= "score">
+        <h3>Score</h3>
+      </div>
+      <div id= "scoreKeeper">
+        <h2>0</h2>
+      </div>
+    </div>
+    <!--end of score card-->
+  </div>
+
+  <!-- blank area -->
+  <div class="box" id="4"></div>
+
+  <div class="box" id="5">
+  <!-- spinner -->
+    <div id="spinWrapper">
+      <div id="wheel">
+        <div id="inner-wheel">
+          <div class="sec"><span class="fa fa-html5"></span></div>
+          <div class="sec"><span class="fa fa-database"></span></div>
+          <div class="sec"><span class="fa fa-git-square"></span></div>
+          <div class="sec"><span class="fa fa-JS">JS</span></div>
+          <div class="sec"><span class="fa fa-css3"></span></div>
+          <div class="sec"><span class="fa fa-question-circle"></span></div>
+        </div>
+        <div id="spin">
+          <div id="inner-spin"></div>
+        </div>
+          <div id="shine"></div>
+      </div>
+    </div>
+  <!-- end of spinner -->
+  </div>
+
+  <!-- blank area -->
+  <div class="box" id="6"></div>
+
+  <!-- blank area -->
+  <div class="box" id="7"></div>
+
+  <div class="box" id="8">
+    <!-- button to launch the form to add your own question -->
+    <div id= "btnAddQwrapper">
+      <button type="button" class="btn" id="btnAddQ">
+      Add Your Own Question
+      </button>
+    </div>
+  <!-- end of button to launch the form to add your own question -->
+  </div>
+
+  <!-- blank area -->
+  <div class="box" id="9"></div>
+
+ </div>
+
+
+
+  <!--Question form-->
+  <div class= "form" id= "formWrapper">
+    <div class= "form" id= "btnGroupOuter"></div>
+      <div id= "qBox">
+      </div>
+
+    <div id ="btnGroupInner">
+      <button type="button" class="btn choice" id="A"></button>
+      <br>
+      <button type="button" class="btn choice" id="B"></button>
+      <br>
+      <button type="button" class="btn choice" id="C"></button>
+    </div>
+  </div>
+  <!--end Question form-->
+
+
+  <!-- Add your own Question Form -->
+  <div id= "addForm">
+   <div class= "form" id= "btnGroupOuter">
+    <form class="form-horizontal" role="form" form id='myForm'>
+      <div class="col-sm-10">
+        <select class="form-control" id="dropDown">
+          <option value="" disabled selected required>Select a Category</option>
+          <option>JavaScript</option>
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>Git</option>
+          <option>General</option>
+        </select>
+      <br>
+      <br>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">
+          <span>Question</span>
+        </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" size= "55" id='question' placeholder="Enter question here..." required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">
+          <span>Answer</span>
+        </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" size= "55" id='answer' placeholder="Enter answer here..." required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">
+          <span>Wrong Answer 1</span>
+        </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" size= "55" id="wrong1" placeholder="Enter wrong answer...">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">
+          <span>Wrong Answer 2</span>
+        </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" size= "55" id="wrong2" placeholder="Enter wrong answer...">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn" id="add">Add</button>
+          <button type="button" class="btn" id="cancel">Cancel</button>
+        </div>
+      </div>
+    </form>
+   </div>
+  </div>
+  <!--End add your own Question Form-->
+
+
+  <!--menu form-->
+   <div class= "menuForm" id= "menuFormWrapper">
+    <form role="menuForm" id='menuForm'>
+      <div class="menu-group">
+          <input type="text" size= "30" id='gitUserName' placeholder="Enter github username here...">
+      </div>
+   </div>
+{% endblock %}

@@ -1,0 +1,336 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/blue_background.jpeg);
+  font-weight: lighter;
+  font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+}
+
+div {
+  margin: 0 auto;
+  width: 300px;
+}
+
+span {
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+}
+
+h1 {
+/*  margin: 25px 0;*/
+  font-size: 1.1em;
+  letter-spacing: .3em;
+}
+
+h2 {
+  font-size: 3.4em;
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.9em;
+  vertical-align: center;
+}
+
+h5 {
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+  color: white;
+  vertical-align: center;
+}
+
+
+input {
+    border: 2px solid white;
+    height: 18px;
+    -webkit-box-shadow:
+      inset 0 0 15px  rgba(0,0,0,0.1),
+            0 0 20px rgba(0,0,0,0.1);
+    -moz-box-shadow:
+      inset 0 0 15px  rgba(0,0,0,0.1),
+            0 0 20px rgba(0,0,0,0.1);
+    box-shadow:
+      inset 0 0 15px  rgba(0,0,0,0.1),
+            0 0 20px rgba(0,0,0,0.1);
+    padding: 1px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 6px 0;
+    border-radius: 10px;
+}
+
+.form-control {
+    width: 100%;
+    background: #9bc7de;
+    color: #200;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+
+    border: 2px solid white;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #300;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #300;
+   opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #300;
+   opacity:  1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #300;
+}
+
+
+.score h3{
+  position: absolute;
+  color: white;
+  top: 10%;
+  right: 10%;
+  z-index: 0;
+}
+
+#header {
+  width: 100%
+  left: 50%;
+  z-index: -1;
+  text-align: center;
+}
+
+#quiz h3 {
+  font-size: 17px; margin: 0 0 1px 0; color : #666;
+}
+
+#spinWrapper {
+
+}
+
+/* button functionality */
+.btn {
+   width: 300px;
+   margin-top: 10px;
+   height: 60px;
+   top:45%;
+   left: 50%;
+   transform: translate3d(-50%,-50%, 0);
+   position: relative;
+   line-height: 15px;
+   border-top: 1px solid #61baf2;
+   background: #338ccc;
+   border-radius: 36px;
+   color: white;
+   font-size: 18px;
+   font-weight: lighter;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   text-align: center;
+   vertical-align: middle;
+   opacity: 1;
+   }
+
+.btn:hover {
+   width: 300px;
+   border-top-color: #285e82;
+   background: #285e82;
+   color: #ccc;
+   }
+
+.btn:active {
+   width: 300px;
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+/* end of button functionality */
+
+/* trivia question form */
+#btnGroupOuter {
+  text-align: center;
+  vertical-align: middle;
+  width: 340px;
+  height: 315px;
+  top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+  z-index: 1;
+  border-radius: 25px;
+  background: rgb(56, 56, 83);
+  border-top: 1px solid #61baf2;
+  border-bottom: 4px solid #000000;
+  border-right: 4px solid #1C1C2A;
+  opacity: .96;
+}
+
+#qBox {
+  width: 300px;
+  height: 80px;
+  margin: auto;
+  top:30%;
+  left: 50%;
+  font-size: 22px;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+  z-index: 10;
+}
+
+#btnGroupInner {
+  top: 60%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+  z-index: 2;
+}
+
+#btnGroupInner h5 {
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: center;
+  z-index: 10;
+}
+/* end of trivia question form */
+
+
+
+/*player section*/
+#gitPicWrapper {
+  position: fixed;
+  top: 50px;
+  right: 55px;
+  z-index: 0;
+}
+
+#gitPicFrame {
+  position: fixed;
+  top: -10px;
+  left: 0px;
+  z-index: 0;
+}
+
+#userPic {
+  position: fixed;
+  top: 58px;
+  left: 38px;
+  z-index: -1;
+}
+
+#imgGit {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+/* menu section*/
+#menuWrapper {
+  position: fixed;
+  top: 50px;
+  left: 140px;
+  z-index: 0;
+}
+
+#menu:hover {
+  width: 15%;
+  height: 15%;
+  z-index: 15;
+  -webkit-animation:spin .25s linear;
+  -moz-animation:spin .25s linear;
+  animation:spin .25s linear;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(180deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(180deg); transform:rotate180deg); } }
+
+#menuFormWrapper {
+  position: fixed;
+  top: 15px;
+  left: 140px;
+  z-index: 7;
+}
+
+/*score section*/
+#scoreWrapper {
+  position: fixed;
+  top: 50px;
+  right: 45px;
+  z-index: 0;
+}
+
+#scoreKeeper {
+  position: fixed;
+  top: 55px;
+  right: -45px;
+  z-index: 0;
+}
+
+#scoreFrame {
+  position: fixed;
+  top: -10px;
+  right: -100px;
+  z-index: 0;
+}
+
+
+/* add your own question form*/
+#btnAddQwrapper {
+   height: 60px;
+   margin-top: 350px;
+   left: 50%;
+   z-index: 4;
+   text-align: center;
+}
+
+#btnAddQ {
+  height: 70%;
+  left: 50%
+  color: black;
+}
+
+#cancel {
+  font-size: 16px;
+  position: absolute;
+  max-height: 25px;
+  max-width: 100px;
+  margin-left: 25%;
+  margin-top: 43%;
+}
+
+#add {
+  font-size: 16px;
+  position: absolute;
+  max-height: 25px;
+  max-width: 80px;
+  margin-left: -30%;
+  margin-top: 43%;
+}
+
+#myForm {
+  margin: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+#dropDown {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
